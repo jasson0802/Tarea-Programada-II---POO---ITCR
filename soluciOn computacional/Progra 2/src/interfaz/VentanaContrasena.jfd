@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {par t {seq {space :0:135:x, comp botonGuardar:::p::p, space s:::p, comp botonSalir:::p::p}, par l {seq {space :::p, comp label2:::p::p, space u:::p, comp entradaContrasena:::p:202:p}, seq l {space :p:131:p, comp label1:::p::p}}}, space ::37:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:11:p, par l {comp label2:::p::p, comp entradaContrasena:::p::p}, space :p:33:p, par b {comp botonSalir::b:p::p, comp botonGuardar::b:p::p}, space ::21:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Contraseña:"
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "entradaContrasena"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonGuardar"
+					"text": "Guardar"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 330, 180 )
+		} )
+	}
+}

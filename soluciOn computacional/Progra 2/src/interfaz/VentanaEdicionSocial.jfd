@@ -1,0 +1,121 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p::p, space :0:-16:x}}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l:::p {seq {space :p:37:p, comp botonAgregarPersona:::p::p, space u:::p, comp botonCrear:::p:106:p, space ::51:x, comp botonSalir:::p:87:p}, seq {space :p:27:p, par l:::p {seq l {comp botonAgregarImg:::p::p, space :::p, comp entradaImagen::::260:x}, seq l {comp label5:::p:94:p, space :::p, comp comboTipo:::::x}, seq t {comp label2:::p::p, space :::x, comp comboPaises:::p:283:p}, seq l {par l {comp label3::l:p::p, comp label4::l:p::p}, space u:::p, par l {comp comboActividad:::::x, comp comboLocacion:::::x}}, seq l {par l {comp label8::l:p::p, comp label9::l:p::p}, space u:::p, par l {seq {comp entradaTamano::::144:x, space s:::p, comp label10:::p::p, space :::p, comp entradaFormato:::p:87:p, space :p:8:p}, comp entradaDescripcion::::305:x}}, seq l {comp label7:::p::p, space u:::p, comp entradaBase:::p:59:p, space :::p, comp entradaAltura:::p:47:p}, seq l {comp label6:::p:103:p, space :::p, comp entradaDia:::p:56:p, space :::p, comp entradaMes:::p:42:p, space :::p, comp entradaAnio:::p:53:p}}}}, space ::21:x}, seq t {space :0:197:x, comp label1:::p::p, space :p:185:p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:32:p, space :p:9:p, par b {comp botonAgregarImg::b:p::p, comp entradaImagen::b:p::p}, space :::p, par b {comp comboPaises::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp comboActividad::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp comboLocacion::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp comboTipo::b:p::p}, space :p:21:p, par b {comp label6::b:p::p, comp entradaDia::b:p::p, comp entradaMes::b:p::p, comp entradaAnio::b:p::p}, space :::p, par b {comp label7::b:p::p, comp entradaBase::b:p::p, comp entradaAltura::b:p::p}, space :::p, par b {comp label8::b:p::p, comp entradaTamano::b:p::p, comp label10::b:p::p, comp entradaFormato::b:p::p}, space :::p, par b {comp label9::b:p::p, comp entradaDescripcion::b:p::p}, space ::20:x, par b {comp botonAgregarPersona::b:p::p, comp botonCrear::b:p::p, comp botonSalir::b:p::p}, space :::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaImagen"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregarImg"
+					"text": "Agregar Imagen"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAgregarImgMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Pais:"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboPaises"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Tipo de Actividad:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Locacion:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Tipo de Fotografia"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Fecha(dd/mm/aaa):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaDia"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregarPersona"
+					"text": "Agregar Persona"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonCrear"
+					"text": "Guardar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonCrearMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboActividad"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboLocacion"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboTipo"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAnio"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaMes"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Dimensiones(Largo-Ancho):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaBase"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Tamaño(Kb):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaTamano"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Descripción:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaDescripcion"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Formato:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaFormato"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAltura"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 425, 410 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

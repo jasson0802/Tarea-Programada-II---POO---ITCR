@@ -1,0 +1,30 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:2:p, comp panelImagen:::p:375:p, space s:::p, par l {comp botonSalir::::114:x, comp scrollPane2::l::114:x}}}"
+			"$verticalGroup": "par l {seq {comp scrollPane2:::p:293:p, space :::p, comp botonSalir:::p::p, space :0:7:x}, comp panelImagen:::::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "panelImagen"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textoInformacion"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonSalir"
+				"text": "Salir"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 525, 365 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

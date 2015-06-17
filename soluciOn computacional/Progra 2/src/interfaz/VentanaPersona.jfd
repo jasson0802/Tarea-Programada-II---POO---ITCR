@@ -1,0 +1,68 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:164:p, comp labelInicio:::p::p}, par t:l {seq t {space :0:195:x, comp botonAgregar:::p::p, space :p:25:p, comp botonSalir:::p::p}, seq l {space :p:28:p, par l:::p {seq {comp label3:::p::p, space :::x, comp entradaAlias:::p:216:p}, seq t {comp label5:::p::p, space :::x, comp entradaNumero:::p:216:p}, seq l {comp label1:::p::p, space s:::p, comp entradaNombre:::p:97:p, space u:::p, comp entradaApellido:::::x}, seq l {comp label4:::p::p, space :::x, comp entradaCorreo:::p:216:p}}}}}, space ::25:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp labelInicio:::p::p, space :p:10:p, par b {comp label1::b:p::p, comp entradaNombre::b:p::p, comp entradaApellido::b:p::p}, space u:::p, par b {comp label3::b:p::p, comp entradaAlias::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp entradaCorreo::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp entradaNumero::b:p::p}, space u:::p, par b {comp botonAgregar::b:p::p, comp botonSalir::b:p::p}, space :::x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelInicio"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Nombre-Apellido:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Alias:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "E-mail:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Número Telefónico:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaNombre"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAlias"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaCorreo"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaNumero"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregar"
+					"text": "Agregar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAgregarMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaApellido"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 385, 240 )
+		} )
+	}
+}

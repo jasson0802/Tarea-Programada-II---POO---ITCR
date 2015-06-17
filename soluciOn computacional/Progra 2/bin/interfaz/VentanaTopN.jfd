@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l:::p {comp label1:::::x, comp label2:::::x}, space u:::p, par l {seq {comp botonTop:::p::p, space u:::p, comp botonSalir:::p::p}, par l:::p {comp entradaCantidad::::129:x, comp comboTipo::::129:x}}, space ::54:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp entradaCantidad::b:p::p}, space s:::p, par b {comp label2::b:p::p, comp comboTipo::b:p::p}, space u:::p, par b {comp botonTop::b:p::p, comp botonSalir::b:p::p}, space ::16:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Cantidad de elemetos:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "entradaCantidad"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Tipo de fotografia:"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboTipo"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonTop"
+				"text": "Ver Top"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonTopMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonSalir"
+				"text": "Salir"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 20 )
+			"size": new java.awt.Dimension( 330, 155 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane1::t::299:x, seq t {space :0:236:x, comp botonCerrar:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1::::212:x, space u:::p, comp botonCerrar:::p::p, space :p:7:p}}"
+		} ) {
+			name: "dialog1"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "listaN"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonCerrar"
+				"text": "Cerrar"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonCerrarMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 395, 0 )
+			"size": new java.awt.Dimension( 335, 300 )
+		} )
+	}
+}

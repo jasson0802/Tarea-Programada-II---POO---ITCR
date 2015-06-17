@@ -1,0 +1,135 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::205:x, par l {seq t {comp botonCrear:::p:106:p, space :::p, comp botonSalir:::p:87:p, space :p:33:p}, seq t {comp label1:::p::p, space :p:191:p}}}, seq l {space :p:27:p, par t:::p {seq {comp botonAgregarImg:::p::p, space :::x, comp entradaImagen:::p:207:p}, seq l {comp label11:::p::p, space u:::p, comp entradaDescripcion:::::x}, seq l {comp label8:::p::p, space :::p, comp entradaBase:::p:42:p, space :::p, comp entradaAltura:::p:42:p, space u:::p, comp label10:::p::p, space :::p, comp entradaTamano:::p:50:p}, seq t {comp botonAgregarSonido:::p::p, space u:::p, comp entradaSonido:::::x}, seq l {comp label3:::p::p, space :p:27:p, comp comboEvento:::::x}, seq t {comp label2:::p::p, space :::x, comp comboPaises:::p:283:p}, seq l {par l {comp label4::l:p::p, comp label5::l:p::p}, space u:::p, par l {seq {comp entradaLatitud:::p:94:p, space s:::p, comp entradaLongitud:::::x}, comp comboAmbito:::::x}}, seq l {par l {seq {comp label7:::p::p, space :p:80:p}, seq t {comp label6:::p:103:p, space :::p}}, par l {seq {comp entradaDia:::p:42:p, space s:::p, comp entradaMes:::p:42:p, space s:::p, comp entradaAnio:::p:42:p, space :0:0:x}, seq {comp entradaHora:::p:66:p, space :::x, comp label9:::p::p, space u:::p, comp entradaFormato:::p:52:p}}}}, space ::60:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:32:p, space :p:9:p, par b {comp entradaImagen::b:p::p, comp botonAgregarImg::b:p::p}, space :::p, par b {comp comboPaises::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp comboEvento::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp entradaLatitud::b:p::p, comp entradaLongitud::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp comboAmbito::b:p::p}, space u:::p, par b {comp label6::b:p::p, comp entradaDia::b:p::p, comp entradaMes::b:p::p, comp entradaAnio::b:p::p}, space :p:13:p, par b {comp label7::b:p::p, comp entradaHora::b:p::p, comp label9::b:p::p, comp entradaFormato::b:p::p}, space u:::p, par b {comp botonAgregarSonido::b:p::p, comp entradaSonido::b:p::p}, space u:::p, par b {comp label8::b:p::p, comp entradaBase::b:p::p, comp entradaAltura::b:p::p, comp label10::b:p::p, comp entradaTamano::b:p::p}, space :::p, par b {comp label11::b:p::p, comp entradaDescripcion::b:p::p}, space ::24:x, par b {comp botonSalir::b:p::p, comp botonCrear::b:p::p}, space :::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaImagen"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregarImg"
+					"text": "Agregar Imagen"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAgregarImgMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Pais:"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboPaises"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Tipo Evento:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Latitud, Longitud:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaLatitud"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Ámbito"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Fecha(dd/mm/aaa):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaDia"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregarSonido"
+					"text": "Agregar Sonido"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAgregarSonidoMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonCrear"
+					"text": "Guardar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonCrearMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboEvento"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaLongitud"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboAmbito"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Hora:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaHora"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaSonido"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAnio"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaMes"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Dimensiones(Largo-Ancho):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaBase"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAltura"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Formato:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Tamaño(Kb):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaTamano"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "Descripción:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaDescripcion"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaFormato"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 455, 450 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

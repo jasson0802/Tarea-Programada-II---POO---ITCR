@@ -1,0 +1,171 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:138:p, comp label1:::p::p}, par t:l {seq t {space :::p, comp botonConsulta:::p::p, space u:::p, comp botonSalir:::p::p}, seq l {space :p:18:p, comp label2:::p::p, space s:::p, comp entradaID:::p:195:p}}}, space ::25:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, par b {comp label2::b:p::p, comp entradaID::b:p::p}, space ::37:x, par b {comp botonSalir::b:p::p, comp botonConsulta::b:p::p}, space :p:33:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ALFE"
+					"font": &Font0 new java.awt.Font( "Times New Roman", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "ID Fotografía:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaID"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonConsulta"
+					"text": "Consultar Información"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonConsultaMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 340, 190 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2::l:::x}"
+			"$verticalGroup": "par l {comp panel2::l:::x}"
+		} ) {
+			name: "dialog1"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:97:p, comp label4:::p::p}, seq l {space :p:19:p, comp label3:::p::p, space u:::p, par l:::p {seq {comp botonVer:::p::p, space :::x, comp botonSalir2:::p::p}, comp entryContrasena:::p:140:p}}}, space ::25:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label4:::p::p, space s:::p, par b {comp label3::b:p::p, comp entryContrasena::b:p::p}, space :p:29:p, par b {comp botonVer::b:p::p, comp botonSalir2::b:p::p}, space ::29:x}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Contraseña:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "ALFE"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "entryContrasena"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonVer"
+					"text": "Ver Foto"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonVerMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir2"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalir2MouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 375, 5 )
+			"size": new java.awt.Dimension( 270, 190 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp pImagenPeriodismo:::p:298:p, space :::p, par l {seq {par l {seq {comp botonPlay:::p::p, space ::8:x, comp botonStop:::p::p}, comp salirPeriodismo::l:::x}, space :::p}, comp informacionPeriodismo::::100:x}}}"
+			"$verticalGroup": "par l {seq {comp pImagenPeriodismo::::338:x, space :::p}, seq l {comp informacionPeriodismo::::255:x, space :p:22:p, par b {comp botonPlay::b:p::p, comp botonStop::b:p::p}, space u:::p, comp salirPeriodismo:::p::p, space :p:15:p}}"
+		} ) {
+			name: "dialogPeriodismo"
+			"$sizePolicy": 0
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "pImagenPeriodismo"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "miImagenPeriodismo"
+					"text": "text"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "informacionPeriodismo"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonPlay"
+				"text": ">"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonPlayMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonStop"
+				"text": "||"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonStopMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "salirPeriodismo"
+				"text": "Salir"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "salirPeriodismoMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 640 )
+			"size": new java.awt.Dimension( 420, 385 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp pImagenEmpresarial:::p:357:p, space :::p, par l {comp salirEmpresarial::l:::x, seq l {comp informacionEmpresarial:::p:122:p, space :0:0:x}, comp pImagenQR:::::x}, space :::p}}"
+			"$verticalGroup": "par l {comp pImagenEmpresarial::::429:x, seq l {comp informacionEmpresarial::::246:x, space :::p, comp pImagenQR:::p:137:p, space :::p, comp salirEmpresarial:::p::p, space :::p}}"
+		} ) {
+			name: "dialogEmpresarial"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "pImagenEmpresarial"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "miImagenEmpresarial"
+					"text": "text"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "informacionEmpresarial"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "pImagenQR"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "miImagenQR"
+					"text": "text"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "salirEmpresarial"
+				"text": "Salir"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "salirEmpresarialMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 775, 270 )
+			"size": new java.awt.Dimension( 510, 465 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp pImagenSocial:::p:357:p, space :::p, par l {comp informacionSocial::::101:x, comp salirSocial::::101:x}, space :::p}}"
+			"$verticalGroup": "par l {seq {par l:::p {comp pImagenSocial::::341:x, comp informacionSocial::::341:x}, space :::x, comp salirSocial:::p::p, space :::p}}"
+		} ) {
+			name: "dialogSocial"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "pImagenSocial"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "miImagenSocial"
+					"text": "text"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "informacionSocial"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "salirSocial"
+				"text": "Salir"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "salirSocialMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 70, 220 )
+			"size": new java.awt.Dimension( 490, 415 )
+		} )
+	}
+}

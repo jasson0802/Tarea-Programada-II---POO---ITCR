@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::x, par l {seq t {comp botonCrear:::p:106:p, space :p:149:p}, seq t {comp label1:::p::p, space :p:181:p}}}, seq l {space :p:27:p, par l {par t:l {comp botonSalir:::p:87:p, seq {comp label9:::p::p, space u:::p, comp entradaTamanio:::p:76:p, space u:::p, comp label10:::p::p, space :::p, comp entradaDescripcion:::p:147:p}}, par t:l {seq {comp botonAgregarImg:::p::p, space :::p, comp entradaImagen:::p:207:p}, par t:::p {seq l {comp label5:::p::p, space s:::p, comp entradaFacebook:::p:211:p}, seq l {comp label4:::p::p, space u:::p, comp entradaTwitter:::::x}, seq l {comp label3:::p::p, space :::p, comp entradaCompania:::::x}, seq {comp label2:::p::p, space s:::p, comp comboPaises:::p:283:p}, seq l {comp label6:::p:103:p, space :::p, comp entradaDia:::p:42:p, space :::p, comp entradaMes:::p:42:p, space s:::p, comp entradaAnio:::p:42:p}}}, seq l {comp label7:::p::p, space :::p, comp entradaBase:::p:66:p, space u:::p, comp entradaAltura:::p:42:p, space :::p, comp label8:::p::p, space u:::p, comp entradaFormato:::p:71:p}, seq l {comp botonAgregarQR:::p::p, space u:::p, comp entradaQR:::p:254:p}}, space ::19:x}}"
+				"$verticalGroup": "par l {seq l {space :p:9:p, comp label1:::p:32:p, space u:::p, par b {comp entradaImagen::b:p::p, comp botonAgregarImg::b:p::p}, space :::p, par b {comp label2::b:p::p, comp comboPaises::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp entradaCompania::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp entradaTwitter::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp entradaFacebook::b:p::p}, space :p:21:p, par l {par b {comp entradaMes::b:p::p, comp entradaAnio::b:p::p}, par b:l {comp label6::b:p::p, comp entradaDia::b:p::p}}, space u:::p, par b {comp botonAgregarQR::b:p::p, comp entradaQR::b:p::p}, space u:::p, par b {comp label7::b:p::p, comp label8::b:p::p, comp entradaBase::b:p::p, comp entradaAltura::b:p::p, comp entradaFormato::b:p::p}, space :::p, par b {comp label9::b:p::p, comp entradaTamanio::b:p::p, comp label10::b:p::p, comp entradaDescripcion::b:p::p}, space ::17:x, par b {comp botonCrear::b:p::p, comp botonSalir::b:p::p}, space :::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaImagen"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregarImg"
+					"text": "Agregar Imagen"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAgregarImgMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Pais:"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboPaises"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Compañia:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaCompania"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Cuenta de Twitter:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaTwitter"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Cuenta de Facebook:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaFacebook"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Fecha(dd/mm/aaa):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaDia"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaQR"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAgregarQR"
+					"text": "Agregar QR"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAgregarQRMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonCrear"
+					"text": "Guardar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonCrearMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAnio"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaMes"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Dimensiones(Largo-Ancho):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaBase"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Formato:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Tamaño(Kb):"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaTamanio"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Descripción:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaDescripcion"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaFormato"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaAltura"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 445, 420 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

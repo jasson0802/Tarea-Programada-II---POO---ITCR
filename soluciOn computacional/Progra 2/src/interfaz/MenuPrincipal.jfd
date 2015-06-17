@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq l {space :p:165:p, comp labelInicio:::p::p}, seq l {space :p:35:p, par t:::p {comp botonAnadirF::l:::x, comp botonAnadirPer::l:::x, comp botonEditarFo::l:::x, comp botonTopN::t:::x, comp botonFotos::l:::x, comp botonEtiquetar::l:::x}, space :p:34:p, par l {par l:t::p {comp botonConsulta:::::x, comp botonGenerador:::::x, comp botonPersonas::l:::x}, comp botonSalir::t:p:113:p}}}, space ::45:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp labelInicio:::p::p, space :p:37:p, par b {comp botonAnadirF::b:p::p, comp botonConsulta::b:p::p}, space u:::p, par b {comp botonAnadirPer::b:p::p, comp botonGenerador::b:p::p}, space u:::p, par b {comp botonEditarFo::b:p::p, comp botonPersonas::b:p::p}, space u:::p, comp botonTopN:::p::p, space :::p, comp botonFotos:::p::p, space :::p, comp botonEtiquetar:::p::p, space s:::p, comp botonSalir:::p::p, space ::27:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelInicio"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAnadirF"
+					"text": "Añadir Fotografía"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAnadirFMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAnadirPer"
+					"text": "Añadir Persona"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAnadirPerMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonEditarFo"
+					"text": "Editar Fotografía"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonEditarFoMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonConsulta"
+					"text": "Consultar Fotografía"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonConsultaMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonGenerador"
+					"text": "Generar Pdf"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonGeneradorMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonTopN"
+					"text": "Ver Top N"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonTopNMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonFotos"
+					"text": "Ver Fotos"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonFotosMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonPersonas"
+					"text": "Ver Personas"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonPersonasMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonEtiquetar"
+					"text": "Etiquetar persona"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonEtiquetarMouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 0 )
+			"size": new java.awt.Dimension( 380, 360 )
+		} )
+	}
+}

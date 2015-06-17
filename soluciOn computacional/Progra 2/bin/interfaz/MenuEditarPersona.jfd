@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {par t {seq {space :0:137:x, comp botonEditar:::p::p, space s:::p, comp botonSalir:::p::p}, par l {seq {space :p:128:p, comp label1:::p::p}, seq l {space :p:22:p, comp label2:::p:31:p, space u:::p, comp entradaID:::p:195:p}}}, space ::35:x}}"
+				"$verticalGroup": "par l {seq l {comp label1:::p::p, space u:::p, par b {comp entradaID::b:p::p, comp label2::b:p::p}, space ::44:x, par b {comp botonSalir::b:p::p, comp botonEditar::b:p::p}, space :::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ALFE"
+					"font": new java.awt.Font( "Tahoma", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "ID:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaID"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonEditar"
+					"text": "Editar"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 320, 170 )
+		} )
+	}
+}
